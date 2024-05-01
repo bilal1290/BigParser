@@ -23,7 +23,7 @@ export function createGridWithAPI(name,desc){
     // Create a post request to create a grid using API
     cy.request({
         method: 'POST',
-        url: 'https://www.bigparser.com/api/v2/grid/create_grid',
+        url: '/api/v2/grid/create_grid',
         headers: {
             Authorization: `Bearer ${localStorage.getItem('oAuth_user_access_token')}` // Extracted Bearer-Token from localStorage
         },
@@ -39,7 +39,7 @@ export function deleteGridWithApi(gridID){
     // created a request to delete grid using api along bearer token from localStorage
     cy.request({
         method: 'DELETE',
-        url: `https://www.bigparser.com/api/v2/grid/${gridID}/delete_grid`,
+        url: `/v2/grid/${gridID}/delete_grid`,
         headers: {
             Authorization: `Bearer ${localStorage.getItem('oAuth_user_access_token')}` // Extracted Bearer-Token from localStorage
         }

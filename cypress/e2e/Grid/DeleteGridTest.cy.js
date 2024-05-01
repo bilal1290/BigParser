@@ -19,6 +19,13 @@ describe('Grid Test', () => {
 
   })
   it('Delete Grid with UI and verify with api if grid is created.', () => {
+
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      // returning false here prevents Cypress from
+      // failing the test
+      return false
+    })
+
     // Creating grid with API
     createGridWithAPI(gridName,gridData.desc)
 

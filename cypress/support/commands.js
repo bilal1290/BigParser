@@ -44,7 +44,7 @@ Cypress.Commands.add('loginWithAPI', (userId, password) => {
 
     cy.request({
         method:'POST',
-        url:'https://www.bigparser.com/oauth/bp_login',
+        url:'/oauth/bp_login',
         body:{"email":userId,"password":password,"loggedIn":true}
     }).then(response=>{
         cy.log(JSON.stringify(response.body))

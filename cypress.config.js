@@ -8,8 +8,8 @@ module.exports = defineConfig({
     },
     // Defining env variables with values
     env:{
-      userId:"qa.abdullah360+cypress@gmail.com",
-      password:"Parser@123",
+      userId:"qualitytester470@gmail.com",
+      password:"Quality@478",
       db: {
         user: "sql6703265",
         host: "sql6.freemysqlhosting.net",
@@ -19,7 +19,7 @@ module.exports = defineConfig({
         }
     },
     // Defining baseUrl of product
-    baseUrl:'https://www.bigparser.com',
+    baseUrl:'https://qa.bigparser.com',
     defaultCommandTimeout: 60000,
 
     // Defining resolution as 1366x720 for web page
